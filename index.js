@@ -1,3 +1,4 @@
+// @ts-nocheck
 // ⭐️ Example Challenge start ⭐️
 
 /**
@@ -39,9 +40,18 @@ function addNumbers(num1, num2) {
  *   email: "leia@leia.com",
  * }
 */
-function makePersonObject(/* code here */) {
-  /* code here */
-}
+function makePersonObject(id, name, email) {
+ 
+  return {
+   id,
+   name,
+   email
+ 
+ }
+ }
+ 
+ console.log(makePersonObject('7', 'gunnar', 'leia@leia.com'));
+
 
 /**
  * ### Challenge `getName`
@@ -56,9 +66,18 @@ function makePersonObject(/* code here */) {
  * passing { id: 1, name: 'Leia', email: 'leia@leia.com` } as the argument,
  * the returned value should look like `Hello, my name is Leia`.
 */
-function getName(/* code here */) {
-  /* code here */
+
+const person = {
+  name: "banana",
+  email: asd@SpeechGrammarList.com"
+
 }
+
+function getName(person) {
+  return `Hello, my name is ${person.name}.`
+
+}
+console.log(getName());
 
 /**
  * ### Challenge `makeSmartPerson`
@@ -151,7 +170,8 @@ function getCarInfoByIndex(inventory, index) {
  * it will return `This is a Lincoln Town Car`.
 */
 function getLastCarInfo(/* code here */) {
-  /* code here */
+  let lastCar = inventory[inventory.length - 1];
+  console.log(`lastCar.car_make) ${lastCar.car_model}`)
 }
 
 /**
@@ -179,8 +199,16 @@ function getCarInfoById(/* code here */) {
  * sortCarInventory returns an inventory that is sorted by car_model, ascending [A-Z].
 */
 function sortCarInventory(/* code here */) {
-  /* code here */
+let carModels = inventory.sort(function(a,b{
+  return 1
+}else if (a.car_model < b.car_model) {
+  return -1
+
+}else{
+  return 0
 }
+});
+console.log(carmodels);
 
 /**
  * ### Challenge `getModelYears`
